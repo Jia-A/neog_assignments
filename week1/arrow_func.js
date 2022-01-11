@@ -17,9 +17,8 @@ console.log("------------------------")
 //     return x * y;
 //   };
 
-const multiply = (x,y) =>{
-    return x*y
-}
+const multiply = (x,y) => x*y
+
 console.log(multiply(2,3))
 console.log("------------------------")
 
@@ -102,12 +101,12 @@ console.log("------------------------")
 //   };
 
 let arithmeticsObj = {
-     sum : (num1, num2) =>{
-        return num1 + num2;
-    },
-    mult : (num1, num2) =>{
-        return num1 * num2;
-    }
+     sum : (num1, num2) =>
+         num1 + num2
+    ,
+    mult : (num1, num2) =>
+         num1 * num2
+    
 }
 console.log(arithmeticsObj.sum(2,2))
 console.log(arithmeticsObj.mult(2,3))
@@ -146,3 +145,31 @@ let {operation, members} = {
       };
 console.log(operation)
 console.log(members)
+console.log("------------------------")
+
+// const packIt = (...args) => console.log(args)
+
+// packIt(1,2,3,5,5)
+
+const packIt = function(...args){
+    console.log(args);
+}
+packIt(1,2,3,4,5)
+console.log("------------------------")
+
+
+const hello = () => "Hello"
+const welcome = () => "Welcome"
+const [Hello = hello(), Welcome = welcome()] = ["Namaste"]
+console.log(Hello, Welcome)
+// output = Namaste Welcome
+console.log("------------------------")
+
+// const obj = {
+//     aloo : 1,
+//     bhallo : 2
+// }
+
+// const {c : aloo = [2,3,4].push(5), aloo} = obj 
+
+// console.log(aloo)
