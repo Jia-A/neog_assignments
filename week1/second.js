@@ -111,3 +111,12 @@ const charSearch = (str, ind)=>{
 }
 console.log(charSearch("Jiya Agrawal", 6))
 
+// Given an array find its length without using length property and use only for loops
+const arrayLength = ([...args])=>{
+    let counter = 0;
+    for(let i=0;i<args[i]!==undefined;i++){
+        counter++
+    }
+    return counter;
+}
+console.log(arrayLength([1,2,3,4,5,6]))

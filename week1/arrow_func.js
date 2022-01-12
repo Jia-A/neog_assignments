@@ -170,6 +170,12 @@ console.log("------------------------")
 //     bhallo : 2
 // }
 
-// const {c : aloo = [2,3,4].push(5), aloo} = obj 
+// const {c : aloo = [2,3,4].push(5)} = obj 
 
 // console.log(aloo)
+
+// let findMin = (...args)=>
+//   Math.min(...args);
+
+// let result1 = findMin(7,2,1,4,5)
+// console.log(result1)
