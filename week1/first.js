@@ -61,6 +61,7 @@ const min = (a,b,c) => {
 
 // 6.Write program to take a month as an input from the user and find out whether the month has 31 days or not.
 const monthDays = month =>{
+    month=month.toLowerCase();
     if(month==="january"||month==="march"||month==="may"||month==="july"||month==="august"||month==="october"||month==="december"){
         return `Yes, ${month} has 31 days`;
     }
@@ -68,7 +69,7 @@ const monthDays = month =>{
         return `No, ${month} doesn't have 31 days.`
     }
 }
-console.log(monthDays("april"))
+console.log(monthDays("April"))
 
 //Intermediate
 // 1. Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
@@ -77,25 +78,108 @@ console.log(monthDays("april"))
 
 const fizzBuzz = () =>{
     
-    for(let i=1;i<17;i++){
-        if(i%3===0 && i%5===0){
-            i="fizzbuzz"
-            console.log(i)
-            
+    for(let i=1;i<31;i++)
+    // if(i%3===0||i%5===0){
+        if(i%3===0&&i%5===0){
+            console.log("FizzBuzz")
         }
-        if( i%3===0){
-            i="fizz"
-           console.log(i)
-           
+        else if(i%3===0){
+            console.log("Fizz")
         }
-        if( i%5===0){
-            i="buzz"
-            console.log(i)
-            
+        else if(i%5===0){
+            console.log("Buzz")
         }
-       
-        console.log(i)
+        // }
+        else{console.log(i)}
         
-    }
 }
 fizzBuzz();
+
+// 2. Print the following star pattern :-
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+// const pattern = ()=>{
+//     for (let i =0;i<6;i++){
+//         for (let j=0;j<i;j++){
+//             console.log("*" + " ")
+//         }
+//          console.log(" ")
+
+//     }
+// }
+// pattern();
+
+// 3. Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+const table = num=>{
+    for(let i=1;i<13;i++){
+        let ans = num*i
+        let mult = `${num} * ${i} = ${ans}`
+        console.log(mult);
+    }
+}
+table(2);
+
+// 4. Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
+
+const fibo = ()=>{
+    let n1=0, n2=1, n3;
+    console.log(n1)
+    console.log(n2)
+    for(let i=1;i<10;i++){ 
+       n3=n1+n2;
+       console.log(n3);
+       n1=n2;
+       n2=n3;
+    }
+}
+fibo();
+
+// 5. Write a program to take an input from a user and find its Factorial.
+
+const fact = num1 =>{
+    let factorial = 1
+    for(let i=1;i<num1+1;i++){
+        factorial=factorial*i
+    }
+    return factorial;
+}
+console.log(fact(6))
+
+// 6. Write a Program to take a number input from user and find if the number is Prime or not.
+
+const prime = num2 =>{
+    let count=0
+    for(let i=2;i<num2/2;i++){
+        if(num2%i===0){
+            count++
+        }
+   }if(count>0){
+       return "Not a prime number"
+   }
+   else{
+       return "Prime number it is."
+   }
+}
+console.log(prime(5));
+
+// 7. Write a program to take a day as an input and determine whether it is a weekday or weekend. Example: Tuesday is weekday.
+
+const dayEnd = day =>{
+    day=day.toLowerCase();
+    if(day==="monday"||day==="tuesday"|day==="thursday"||day==="wednesday"||day==="friday"){
+        return "It is a weekday."
+    }
+    else if(day==="saturday"||day==="sunday"){
+        return "It is a weekend."
+    }
+    else{
+        return "IT'S NOT EVEN A DAYYYYY"
+    }
+}
+console.log(dayEnd("SaturdaY"))
