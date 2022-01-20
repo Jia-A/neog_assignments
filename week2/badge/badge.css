@@ -1,47 +1,110 @@
 html{
     font-size: 100%;
 }
+
 /* container for envelope div */
 .container{
     position: relative;
     display: inline-block;
-    /* margin:50px;
-    padding: 20px; */
-    /* display : flex; */
+    margin:10px;
+    padding: 5px;
+
 }
-/* badge of container with 1 written */
+/* badge properties for envelope icon  */
 .badge{
-    background-color: brown;
+    background-color: #3f51b5;
     color: white;
     position: absolute;
-    /* margin-left: auto;
-    margin-right: 0px; */
+    
     right: 0;
     top: 0;
     border: none;
     border-radius: 1rem;
-    padding: 2px 0.5rem 2px 0.5rem;
+    padding: 2px 0.5rem 2px 0.5rem; 
 }
 
-/* container properties containing text */
+/* container properties with badge with texts */
 .container-text{
     position: relative; 
     display: inline-block;
     margin: 0.62rem;
     padding: 1rem;
+    
 }
-/* badge for the text container */
+
+/* small badge properties */
 .badge-1{
-    background-color: brown;
+    background-color: #3f51b5;
     color: white;
     position: absolute;
-    /* margin-left: auto;
-    margin-right: 0px; */
     right: 0;
     top: 0;
     border: none;
     border-radius: 1rem;
-    padding: 2px 7px 2px 7px;
+    padding: 2px 0.5rem 2px 0.5rem; 
 }
+
+/* large badge properties */
+.badge-2{
+    background-color: #3f51b5;
+    color: white;
+    position: absolute;
+    font-size: 140%;
+    width: 15px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    right: 0;
+    top: 0;
+    border: none;
+    border-radius: 1rem;
+    padding: 2px 0.5rem 2px 0.5rem; 
+}
+/* action button properties */
+.action-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #3f51b5;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* action button badge properties */
+.badge-3{
+    background-color: rgb(250, 76, 163);
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 2px 0.5rem 2px 0.5rem; 
+}
+/* hide button properties */
+.hide-btn{
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+/* hide button badge properties */
+.badge-4{
+    background-color: #3f51b5;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 2px 0.5rem 2px 0.5rem; 
+}
+
 
 
