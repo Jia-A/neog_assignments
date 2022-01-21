@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-article{
+    flex-basis: 150px;
+    width: 800px;
+    border: 1px solid grey;
+}
+
