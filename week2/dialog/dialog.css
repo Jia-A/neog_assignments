@@ -1,3 +1,10 @@
+html{
+    font-size: 100%;
+    font-family: Roboto, sans-serif;
+}
+body{
+    background: rgba(0,0,0,.25)
+}
 main{
     display: flex;
     flex-direction: column;
@@ -7,8 +14,94 @@ main{
 }
 
 .main-article{
-    flex-basis: 150px;
-    width: 800px;
-    border: 1px solid grey;
+    /* flex: 1 1 140px; */
+    width: 250px;
+    /* border: 1px solid grey; */
+    margin: 1rem;
+    padding: 0.3rem 1rem;
+    /* padding-left: 1rem; */
+    font-size: 1rem;
+    background: #fafafa;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    
 }
+
+
+h2{
+    font-weight: 600;
+    color: rgba(0,0,0,0.87); 
+}
+h3{
+    font-weight: 500;
+    color: gray;
+}
+.options{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.action-btn{
+    color: #6200ee;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 600;
+    background: #fafafa ;
+    transition-duration: 0.4s;
+}
+.action-btn:hover{
+    background: #d4c9e4;
+    border-radius: 5px;
+}
+
+span{
+    display: inline-block;
+}
+.icon{
+    padding: 10px;
+    /* margin: 5px; */
+    /* background: gray;
+    border-radius: 100%; */
+}
+.name{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.87); 
+
+}
+ul{
+    list-style-type:none;
+    padding: 0px 20px 20px 20px;
+    margin: 0;
+}
+.user-choose{
+    height: 150px;
+    overflow-y: scroll;
+}
+.list2{
+    padding: 1rem;
+}
+.user-name{
+    padding : 1rem;
+    
+}
+.choosing-list{
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+.choosing-list:hover{
+    background: rgb(196, 194, 194);
+    border-radius: 5px;
+}
+label{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.87); 
+    
+}
+
 

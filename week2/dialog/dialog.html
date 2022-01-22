@@ -4,33 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="dialog.css">
     <title>Dialog</title>
 </head>
 <body>
     <main class="container">
-    <article class="main-article">
-        <header class="headline">Dialog Box</header>
-        <p class="para">This is the dialog</p>
+    <article class="main-article alert">
+        <header class="headline">
+            <h2>Dialog Header</h2>
+        </header>
+        <h3 class="para">This is the dialog</h3>
         <div class="options">
-            <button class="action=btn">Action 1</button>
-            <button class="action=btn">Action 1</button>
+            <button class="action-btn">Action 1</button>
+            <button class="action-btn">Action 2</button>
         </div>
     </article>
-    <article class="main-article">
-        <header class="headline">Dialog Box</header>
-        <p class="para">This is the dialog</p>
-        <div class="options">
-            <button class="action=btn">Action 1</button>
-            <button class="action=btn">Action 1</button>
+
+    <article class="main-article alert">
+        <header class="headline">
+            <h2>Dialog Header</h2>
+        </header>
+        <div class="user-list">
+            <ul class="list">
+                <li><span class="icon"><i class="fal fa-user fa-2x"></i></span> 
+                    <span class="name">User 1 </span></li>
+                <li><span class="icon"><i class="fal fa-user fa-2x"></i></span> 
+                    <span class="name">User 2 </span></li>
+                <li><span class="icon"><i class="fal fa-user fa-2x"></i></span> 
+                    <span class="name">User 3 </span></li>
+            </ul>
         </div>
     </article>
-    <article class="main-article">
-        <header class="headline">Dialog Box</header>
-        <p class="para">This is the dialog</p>
+   
+    <article class="main-article confirmation">
+        <header class="headline">
+            <h2>Dialog Header</h2>
+        </header>
+        
+        <hr>
+        
+        <div class="user-choose">
+            <ul class="list2">
+                <li class="choosing-list">
+                    <input type="radio" class="user-name" name="users">
+                    <label for="users">User 1 </label>
+                <li class="choosing-list">
+                    <input type="radio" class="user-name" name="users">
+                    <label for="users">User 2 </label>
+                <li class="choosing-list"> 
+                    <input type="radio" class="user-name" name="users">
+                    <label for="users">User 3 </label>
+                <li class="choosing-list"> 
+                    <input type="radio" class="user-name" name="users">
+                    <label for="users">User 4 </label>
+                <li class="choosing-list"> 
+                    <input type="radio" class="user-name" name="users">
+                    <label for="users">User 5 </label>    
+            </ul>
+        </div>
+        <hr>
         <div class="options">
-            <button class="action=btn">Action 1</button>
-            <button class="action=btn">Action 1</button>
+            <button class="action-btn">Action 1</button>
+            <button class="action-btn">Action 1</button>
         </div>
     </article>
     </main>
