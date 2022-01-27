@@ -1,0 +1,111 @@
+html{
+    font-size: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid thistle;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer; 
+}
+.main-container:hover{
+    border-bottom: 2px solid rgb(83, 33, 83);;
+}
+.head{
+    width: 100%;
+    color: rgb(146, 91, 146);
+    
+}
+.icon-cross{
+    margin-left: auto;
+}
+i{
+    padding:0px 5px;
+    /* margin-left: auto; */
+    color: rgb(83, 33, 83);
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: thistle;
+    border: none;
+    border-radius: 20px;
+}
+li:hover{
+    color: white;
+    background-color: rgb(145, 60, 145);
+}
+.flex-list{
+    display: flex;
+    flex-direction: row;
+    
+}
+.left{
+    margin-right: 20px;
+}
+.right{
+    padding:0px 5px;
+    margin-left: auto;
+    color: rgb(83, 33, 83);
+}
+.stacked{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    width: fit-content;
+}
+.stacked:hover{
+    color: white;
+}
+.normal{
+    background-color: thistle;
+}
+.normal:hover{
+    background-color: rgb(145, 60, 145);
+}
+.primary{
+    background-color: rgb(145, 60, 145);
+}
+.primary:hover{
+    background-color: rgb(150, 26, 127);
+}
+.warning{
+    background-color: rgb(224, 49, 18);
+}
+.warning:hover{
+    background-color: rgb(201, 40, 12);
+}
+.good{
+    background-color: rgb(21, 150, 21);
+}
+.good:hover{
+    background-color: rgb(9, 105, 9);
+}
+.alert{
+    background-color: rgb(241, 125, 16);
+}
+.alert:hover{
+    background-color: rgb(226, 123, 26);
+}
+
+
