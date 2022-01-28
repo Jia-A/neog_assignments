@@ -18,12 +18,49 @@ html{
     cursor: pointer; 
 }
 .main-container:hover{
-    border-bottom: 2px solid rgb(83, 33, 83);;
+    border-bottom: 2px solid rgb(83, 33, 83);
 }
 .head{
     width: 100%;
     color: rgb(146, 91, 146);
     
+}
+ .margin{
+    /* margin: 0; */
+    padding: 0;
+}
+li .input{
+    background-color:thistle;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: rgb(231, 216, 231);
+}
+.user-input{
+    background-color: rgb(231, 216, 231);
+}
+.user-input:hover{
+    background-color: rgb(231, 216, 231);
+}
+::placeholder{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+h5{
+    color: rgb(146, 91, 146);
+}
+.marginned{
+    margin: 15px;
+    padding: 0px 0px 5px 15px;
+    background-color: rgb(231, 216, 231);
+    border-radius: 5px;
+}
+.find-container:hover{
+    border-bottom: 1px solid thistle;
+}
+.marginned:hover{
+    border-bottom: 2px solid rgb(83, 33, 83);
 }
 .icon-cross{
     margin-left: auto;
