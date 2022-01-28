@@ -25,6 +25,11 @@ html{
     border: none;
     flex-wrap: wrap;
 }
+/* .width{
+    flex-wrap: nowrap;
+    width: 350px;
+    overflow-x:hidden;
+} */
 .heading{
     display: flex;
     flex-direction: row;
