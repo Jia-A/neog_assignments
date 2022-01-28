@@ -1,13 +1,41 @@
-body{
-    margin: 0;
+html{
+    font-size: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-container{
+    margin-top: 50px;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 40px;
+    /* width: 400px; */
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.content-container{
+    /* flex-basis: 500px;
+    display:flex;
+    flex-direction: column; */
+    border: 1px solid black;
+    /* align-self: center; */
+    width: 500px;
+    height: 150px;
+    overflow-y: scroll;
+    /* position: relative; */
+    
+}
+.content{
+    margin: 10px;
+    
 }
 .container{
     display: flex;
     width: 100%;
     background-color: #6200ee;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+     align-items: center;
+    /* justify-content: center;  */
     
 }
 .collapsed{
@@ -19,6 +47,7 @@ body{
 
 .head{
     margin: 10px;
+    
 }
 .items{
     margin-left: auto;
@@ -35,11 +64,11 @@ body{
 
 }
 
-
-.margin{
-    margin-top: 50px;
-}
 .prom{
     height: 100px;
     
+}
+.fixed{
+    position: sticky;
+    top: 0;
 }
